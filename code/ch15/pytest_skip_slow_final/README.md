@@ -10,7 +10,7 @@ Include the slow tests with `--slow`.
 $ pip install pytest-slow
 ```
 
-## Usage
+## Usage    
 
 Example `test_slow.py`:
 

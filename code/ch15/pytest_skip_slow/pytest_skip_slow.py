@@ -1,5 +1,6 @@
+"""Skip slow tests by default, with a cli option to run slow tests."""
 import pytest
-
+__version__ = "1.2.3"
 
 def pytest_configure(config):
     config.addinivalue_line("markers", "slow: mark test as slow to run")

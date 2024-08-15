@@ -4,10 +4,19 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "pytest_skip_slow"
-authors = [{name = "Blaise Pabon", email = "blaise@gmail.com"}]
+authors = [{name = "Brian Okken", email = "blaise+jeff@gmail.com"}]
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
 
 [project.urls]
-Home = "https://github.com/okken/pytest-skip-slow"
+Home = "https://blaispabon.com"
+
+[project.entry-points.pytest11]
+skip_slow = "pytest_skip_slow"
+
+[project.optional-dependencies]
+test = ["tox"]
+
+[tool.flit.module]
+name = "pytest_skip_slow"
